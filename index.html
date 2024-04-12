@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>NDC</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div class="overlay active" onclick="removeModal()"></div>
+  <header>
+    <section class="hero-section">
+      <div class="flex-header">
+        <div>
+          <div>VIP Level 0</div>
+          <div class="name">mad</div>
+        </div>
+        <img src="./assets/img/logo (2).png" alt="" class="logo" width="60" style="border-radius: 15px;">
+      </div>
+      <div class="divider"></div>
+      <div class="flex-header">
+        <div class="value">Balance: ₹ 16.00</div>
+        <a class="topup-btn" href="./deposit.html">Top Up</a>
+      </div>
+      <div class="flex-header" style="margin-top: 10px;">
+        <div class="value">Withdrawal Balance: ₹ 0.00</div>
+        <a class="withdraw-btn" href="./withdraw.html">Withdraw</a>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="earning-section">
+      <div class="section-header">
+        <h4 class="title">My Earnings Investment</h4>
+        <a href="./orders.html" class="header-link">View details</a>
+      </div>
+      <div class="section-content">
+        <div class="earning-container">
+          <div>Total Investment</div>
+          <div class="earning-circle">₹0</div>
+        </div>
+        <div class="earning-container">
+          <div>Total Earnings</div>
+          <div class="earning-circle" style="border-color: var(--green); color: var(--green);">₹16</div>
+        </div>
+      </div>
+    </section>
+    <section class="router-section">
+      <a class="router-items" href="./bank.html">
+        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 8.66667C3 7.69421 3.38631 6.76157 4.07394 6.07394C4.76158 5.38631 5.69421 5 6.66667 5H27.037C28.0095 5 28.9421 5.38631 29.6298 6.07394C30.3174 6.76157 30.7037 7.69421 30.7037 8.66667V23.3333C30.7037 24.3058 30.3174 25.2384 29.6298 25.9261C28.9421 26.6137 28.0095 27 27.037 27H6.66667C5.69421 27 4.76158 26.6137 4.07394 25.9261C3.38631 25.2384 3 24.3058 3 23.3333V8.66667ZM6.66667 7.44444C6.34251 7.44444 6.03164 7.57321 5.80243 7.80243C5.57321 8.03164 5.44444 8.34251 5.44444 8.66667V9.88889H28.2593V8.66667C28.2593 8.34251 28.1305 8.03164 27.9013 7.80243C27.6721 7.57321 27.3612 7.44444 27.037 7.44444H6.66667ZM28.2593 12.3333H5.44444V23.3333C5.44444 24.008 5.992 24.5556 6.66667 24.5556H27.037C27.3612 24.5556 27.6721 24.4268 27.9013 24.1976C28.1305 23.9684 28.2593 23.6575 28.2593 23.3333V12.3333ZM9.11111 19.6667H16.4444C16.7686 19.6667 17.0795 19.7954 17.3087 20.0246C17.5379 20.2539 17.6667 20.5647 17.6667 20.8889C17.6667 21.213 17.5379 21.5239 17.3087 21.7531C17.0795 21.9823 16.7686 22.1111 16.4444 22.1111H9.11111C8.78696 22.1111 8.47608 21.9823 8.24687 21.7531C8.01766 21.5239 7.88889 21.213 7.88889 20.8889C7.88889 20.5647 8.01766 20.2539 8.24687 20.0246C8.47608 19.7954 8.78696 19.6667 9.11111 19.6667Z" fill="#4E9D2D"></path>
+          </svg>
+          <div class="title">My Card</div>
+      </a>
+      <a class="router-items" href="./vip.html">
+        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24.4646 28.9996H8.53878C6.96786 28.9996 5.6678 27.9162 5.34278 26.3995L1.33425 6.46515C1.22591 6.03179 1.44259 5.54427 1.87594 5.32759C2.25513 5.11091 2.79682 5.16508 3.12184 5.43593L9.83884 11.1779L15.635 3.43166C16.0683 2.88997 16.935 2.88997 17.3684 3.43166L23.1645 11.1779L29.8815 5.43593C30.2065 5.11091 30.7482 5.11091 31.1274 5.32759C31.5066 5.54427 31.7233 6.03179 31.6691 6.46515L27.6606 26.3995C27.3356 27.9162 26.0355 28.9996 24.4646 28.9996ZM4.09689 9.11945L7.45539 25.9661C7.56373 26.4536 7.99708 26.8328 8.53878 26.8328H24.4646C25.0063 26.8328 25.4396 26.4536 25.548 25.9661L28.9065 9.11945L23.7062 13.5613C23.4895 13.778 23.1645 13.8322 22.8937 13.8322C22.6228 13.778 22.2978 13.6697 22.1353 13.3988L16.5017 5.86928L10.8681 13.3988C10.7056 13.6155 10.4347 13.778 10.1097 13.8322C9.83884 13.8864 9.51383 13.778 9.29715 13.5613L4.09689 9.11945Z" fill="#4E9D2D"></path>
+          <path d="M16.4999 23.5821C16.1207 23.5821 15.7415 23.3654 15.579 23.0404L12.3289 17.6235C12.0039 17.136 12.1664 16.4317 12.7081 16.1609C13.1956 15.8359 13.8998 15.9984 14.1706 16.5401L16.4999 20.3861L18.8292 16.5401C19.1542 16.0526 19.8042 15.8359 20.2918 16.1609C20.7793 16.4859 20.996 17.136 20.671 17.6235L17.4208 23.0404C17.2583 23.3654 16.8791 23.5821 16.4999 23.5821Z" fill="#4E9D2D"></path>
+          </svg>
+          <div class="title">VIP Level</div>
+      </a>
+      <a class="router-items" href="./team.html">
+        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.0785 19.0122C10.9514 19.0122 8.95167 18.1839 7.44761 16.6799C5.94355 15.1758 5.11523 13.1761 5.11523 11.049C5.11523 8.92203 5.94355 6.92231 7.44761 5.41825C8.95167 3.91425 10.9514 3.08594 13.0785 3.08594C15.2054 3.08594 17.2051 3.91425 18.7092 5.41828C20.2132 6.92231 21.0415 8.92203 21.0415 11.049C21.0415 13.1761 20.2132 15.1758 18.7092 16.6799C17.2051 18.1839 15.2055 19.0122 13.0785 19.0122ZM13.0785 5.39841C9.96264 5.39841 7.42777 7.93325 7.42777 11.049C7.42777 14.1648 9.96264 16.6997 13.0785 16.6997C16.1942 16.6997 18.729 14.1648 18.729 11.049C18.729 7.93325 16.1942 5.39841 13.0785 5.39841Z" fill="#4E9D2D"></path>
+          <path d="M22.9905 28.913H3.16795C2.95426 28.913 2.74476 28.8538 2.56269 28.7419C2.38062 28.6301 2.23311 28.47 2.13654 28.2793C2.03996 28.0887 1.9981 27.8751 2.0156 27.6621C2.0331 27.4491 2.10927 27.2452 2.23567 27.0729L9.79501 16.7683C10.1727 16.2534 10.8963 16.1422 11.4112 16.5199C11.9261 16.8976 12.0373 17.6212 11.6596 18.1361L5.45017 26.6005H20.7435L14.6355 18.0512C14.2643 17.5316 14.3846 16.8094 14.9042 16.4382C15.4238 16.0669 16.1459 16.1873 16.5171 16.7068L23.9314 27.0846C24.0549 27.2575 24.1284 27.4611 24.1438 27.673C24.1592 27.8849 24.1159 28.0969 24.0187 28.2858C23.9215 28.4747 23.7741 28.6332 23.5927 28.7439C23.4113 28.8545 23.203 28.913 22.9905 28.913Z" fill="#4E9D2D"></path>
+          <path d="M22.179 18.4586L21.33 16.3076C23.5031 15.4499 24.9073 13.3857 24.9073 11.049C24.9073 7.93328 22.3725 5.39844 19.2568 5.39844V3.08594C21.3837 3.08594 23.3834 3.91425 24.8875 5.41828C26.3915 6.92231 27.2198 8.92203 27.2198 11.049C27.2198 12.6784 26.7309 14.2453 25.8057 15.5802C24.9027 16.8832 23.6486 17.8786 22.179 18.4586ZM16.6934 6.01169L15.6426 3.95172C16.7529 3.38531 18.0027 3.08594 19.2568 3.08594V5.39844C18.3536 5.39844 17.4911 5.60478 16.6934 6.01169Z" fill="#4E9D2D"></path>
+          <path d="M29.1684 28.913H18.25C17.6114 28.913 17.0938 28.3954 17.0938 27.7568C17.0938 27.1182 17.6114 26.6005 18.25 26.6005H26.9213L20.8133 18.0512C20.4421 17.5316 20.5624 16.8094 21.082 16.4382C21.6017 16.0669 22.3238 16.1873 22.695 16.7068L30.1092 27.0846C30.2327 27.2575 30.3062 27.4611 30.3216 27.673C30.337 27.8848 30.2937 28.0969 30.1965 28.2858C30.0993 28.4747 29.952 28.6332 29.7706 28.7439C29.5892 28.8545 29.3809 28.913 29.1684 28.913Z" fill="#4E9D2D"></path>
+          </svg>
+          <div class="title">My Team</div>
+      </a>
+    </section>
+    <section class="slider-section">
+    <div class="slide">
+      <div class="slide-left">
+        <p class="title">Copy link to invite friends</p>
+        <p class="desc">https://m.NDC-finance.ru/register?invitationCode=GVQ62</p>
+        <div class="btn-group">
+          <button class="primary-btn">Copy Link</button>
+          <a href="./spread.html"><button class="secondary-btn">Commission</button></a>
+        </div>
+      </div>
+      <div class="slide-right">
+        <img src="./assets/img/commission.c0071d2.png" alt="" height="170">
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide-left">
+        <p class="title">Cash Exchange</p>
+        <input type="text" id="redeemCode" placeholder="Input Redeem Code" name="redeemCode">
+          <button class="primary-btn">Redeem</button>
+      </div>
+      <div class="slide-right">
+        <img src="./assets/img/exchange.41d35e5.png" alt="" height="170">
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide-left">
+        <p class="title">Task System</p>
+        <p class="desc">Performance data quoted represents past performance; past performance does not guarantee future results.</p>
+          <a href="./tasks.html"><button class="primary-btn">Doing Task</button></a>
+      </div>
+      <div class="slide-right">
+        <img src="./assets/img/tasks.14346bb.png" alt="" height="170">
+      </div>
+    </div>
+    </section>
+    <section class="company-section">
+      <div class="section-header">
+        <h4 class="title">About Louis Dreyfus Company</h4>
+        <a href="./company.html" class="header-link">More about us</a>
+      </div>
+      <div class="company-container">
+        <div class="company-item">
+          <img src="./assets/img/tree.png" alt="Tree" width="45">
+          <div>
+            <div class="company-item-title">80 Million</div>
+            <div class="company-item-desc">We originate, process and transport approximately 80 million tons of products annually.</div>
+          </div>
+        </div>
+        <div class="company-item">
+          <img src="./assets/img/web.png" alt="Tree" width="40">
+          <div>
+            <div class="company-item-title">17,000</div>
+            <div class="company-item-desc">We employ around 17,000 people worldwide.</div>
+          </div>
+        </div>
+        <div class="company-item" style="border-bottom: none;">
+          <img src="./assets/img/man.png" alt="Tree" width="40">
+          <div>
+            <div class="company-item-title">1000</div>
+            <div class="company-item-desc">We are active in over 100 countries.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <nav>
+      <ul>
+        <a href="./" class="active">
+        <li>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.1375 7.89977L11.2163 1.63914C10.5344 1.09914 9.46438 1.09977 8.78313 1.63914L0.862506 7.89977C0.591881 8.11414 0.545631 8.50727 0.759381 8.77789C0.973131 9.04852 1.35751 9.09477 1.62813 8.88102L1.87501 8.67852V16.2485C1.87501 17.3216 3.00563 18.1235 4.00001 18.1235H16.5C17.4825 18.1235 18.125 17.3698 18.125 16.2485V8.70789L18.3531 8.88102C18.4681 8.97164 18.6094 9.01539 18.745 9.01539C18.9294 9.01539 19.1144 8.93414 19.2375 8.77789C19.4519 8.50727 19.4088 8.11414 19.1375 7.89977ZM9.37501 16.8735V13.4085C9.37501 13.236 9.68751 13.1498 10 13.1498C10.3125 13.1498 10.625 13.236 10.625 13.4085V16.8735H9.37501ZM16.875 16.2485C16.875 16.6629 16.7606 16.8735 16.5 16.8735H11.8875C11.8875 16.8641 11.875 16.8566 11.875 16.8473V13.4085C11.875 12.6816 11.2888 11.8991 10 11.8991C8.71126 11.8991 8.12501 12.6816 8.12501 13.4085V16.8473C8.12501 16.8566 8.14188 16.8641 8.14188 16.8735H4.00001C3.60813 16.8735 3.12501 16.5348 3.12501 16.2485V7.69039L9.54938 2.61977C9.78001 2.43727 10.1963 2.43727 10.4275 2.61977L16.875 7.71977V16.2485Z" fill="currentColor"></path>
+            </svg>
+            <p class="item-label">Home</p>
+        </li>
+      </a>
+        <a href="./products/">
+        <li>
+          <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_4494_22746)">
+            <path opacity="0.01" d="M0 0.5H20V20.5H0V0.5Z" fill="currentColor"></path>
+            <path d="M11.2018 2.60938H6.28273C5.83789 2.60954 5.39852 2.7075 4.99574 2.8963C4.59295 3.08511 4.23659 3.36015 3.95189 3.70195L1.92516 6.13173C1.65268 6.45917 1.50362 6.87177 1.50391 7.29776V15.3561C1.50391 16.1611 1.82366 16.933 2.39282 17.5022C2.96198 18.0713 3.73393 18.3911 4.53885 18.3911H15.4647C16.2696 18.3911 17.0415 18.0713 17.6107 17.5022C18.1798 16.933 18.4996 16.1611 18.4996 15.3561V7.29776C18.4996 6.87191 18.3503 6.45953 18.0777 6.13234L16.0522 3.70135C15.7674 3.35957 15.4109 3.0846 15.008 2.8959C14.6051 2.7072 14.1657 2.60938 13.7208 2.60938H11.2018ZM9.22481 3.82335H10.7775L11.5872 6.25131H8.41508L9.22481 3.82335ZM6.96681 7.46529V11.9461C6.96681 12.153 7.0197 12.3564 7.12045 12.5372C7.2212 12.7179 7.36646 12.8698 7.54245 12.9786C7.71844 13.0874 7.91932 13.1494 8.12601 13.1588C8.3327 13.1681 8.53835 13.1245 8.72343 13.032L9.73043 12.5282C9.81468 12.4861 9.90757 12.4642 10.0018 12.4642C10.0959 12.4642 10.1888 12.4861 10.2731 12.5282L11.2801 13.032C11.4652 13.1245 11.6708 13.1681 11.8775 13.1588C12.0842 13.1494 12.2851 13.0874 12.461 12.9786C12.637 12.8698 12.7823 12.7179 12.8831 12.5372C12.9838 12.3564 13.0367 12.153 13.0367 11.9461V7.46529H17.2856V15.3561C17.2856 15.5953 17.2385 15.8321 17.147 16.053C17.0555 16.2739 16.9214 16.4747 16.7523 16.6438C16.5832 16.8129 16.3824 16.947 16.1615 17.0385C15.9406 17.13 15.7038 17.1771 15.4647 17.1771H4.53885C4.0559 17.1771 3.59273 16.9853 3.25123 16.6438C2.90974 16.3023 2.71788 15.8391 2.71788 15.3561V7.46529H6.96681ZM11.8227 7.46529V11.9461L10.8163 11.4423C10.5634 11.3158 10.2845 11.2499 10.0018 11.2499C9.71897 11.2499 9.44008 11.3158 9.18717 11.4423L8.18078 11.9461V7.46529H11.8227ZM6.28273 3.82335H7.94588L7.13616 6.25131H3.40682L4.88423 4.4789C5.05505 4.27382 5.26886 4.10879 5.51053 3.99551C5.7522 3.88222 6.01583 3.82345 6.28273 3.82335ZM12.8673 6.25131L12.0576 3.82335H13.7208C13.9877 3.82345 14.2513 3.88222 14.493 3.99551C14.7346 4.10879 14.9485 4.27382 15.1193 4.4789L16.5967 6.25131H12.8673Z" fill="currentColor"></path>
+            </g>
+            <defs>
+            <clipPath id="clip0_4494_22746">
+            <rect width="20" height="20" fill="white" transform="translate(0 0.5)"></rect>
+            </clipPath>
+            </defs>
+            </svg>
+            <p class="item-label">Products</p>
+        </li>
+      </a>
+        <a href="./settings.html">
+        <li>
+          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.463 10.6855C12.6544 10.6855 14.4357 8.9043 14.4357 6.71289C14.4357 4.52148 12.6544 2.74023 10.463 2.74023C8.27163 2.74023 6.49038 4.52148 6.49038 6.71289C6.49038 8.9043 8.27163 10.6855 10.463 10.6855ZM10.463 3.72852C12.1076 3.72852 13.4474 5.06641 13.4474 6.71289C13.4474 8.35742 12.1095 9.69727 10.463 9.69727C8.81655 9.69727 7.47866 8.35938 7.47866 6.71289C7.47866 5.06641 8.81655 3.72852 10.463 3.72852ZM17.9982 16.457C17.7814 13.541 14.4865 11.2578 10.5001 11.2578C6.51382 11.2578 3.21889 13.543 3.0021 16.457C2.98647 16.6621 3.05874 16.8672 3.19936 17.0195C3.34194 17.1719 3.54311 17.2598 3.75014 17.2598H17.2482C17.4572 17.2598 17.6583 17.1719 17.799 17.0195C17.9416 16.8672 18.0138 16.6641 17.9982 16.457ZM4.01772 16.2715C4.37514 13.9941 7.15444 12.2461 10.5001 12.2461C13.8458 12.2461 16.6251 13.9941 16.9826 16.2715H4.01772Z" fill="currentColor"></path>
+            </svg>
+            <p class="item-label">Mine</p>
+        </li>
+      </a>
+      </ul>
+    </nav>
+  </footer>
+  <div class="popup active" onclick="popupRedirect()">
+    <div class="flex">
+      <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none"><rect width="72" height="72" rx="36" fill="white"></rect> <path d="M40.3118 56.9999C39.8269 56.9626 39.3793 56.6269 39.2301 56.142L34.1945 37.8647L15.8054 32.7173C15.3205 32.5681 14.9848 32.1578 14.9475 31.6355C14.9102 31.1133 15.2086 30.6657 15.6935 30.4792L55.3812 15.0741C55.5304 15.0368 55.6423 14.9995 55.7915 14.9995C56.0899 14.9995 56.3884 15.1114 56.6122 15.3352C56.9479 15.6709 57.0598 16.1558 56.8733 16.6034L41.4681 56.2539C41.2816 56.7015 40.8713 56.9999 40.3864 56.9999H40.3118Z" fill="#00A19F"></path></svg>
+      <svg width="200" height="60" viewBox="0 0 400 116" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+        <defs>
+          <style bx:fonts="Hedvig Letters Serif">@import url(https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif%3Aital%2Cwght%400%2C400&amp;display=swap);</style>
+        </defs>
+        <text style="fill: rgb(255, 255, 255); font-family: 'Hedvig Letters Serif'; font-size: 24.4px; white-space: pre;" transform="matrix(4.432298, 0, 0, 4.094621, -426.924561, -456.044067)" x="110.627" y="130.662">NDC.</text>
+        <text style="fill: rgb(255, 255, 255); font-family: Arial, sans-serif; font-size: 24.4px; white-space: pre;" transform="matrix(1.348743, 0, 0, 1.174903, -121.689415, -278.688812)" x="137.631" y="329.268">NDC Construction</text>
+      </svg>
+      <h3>NDC Official Channel</h3>
+    </div>
+  </div>
+  <script>
+    function removeModal() {
+      let overlay = document.querySelector('.overlay');
+      let popup = document.querySelector('.popup');
+      
+      overlay.classList.remove('active');
+      popup.classList.remove('active');
+    }
+
+    function popupRedirect() {
+      let a = document.createElement("a");
+      a.href = "https://ndc-construction.in/demo/";
+      a.target = "_blank";
+      a.click();
+    }
+  </script>
+</body>
+</html>
