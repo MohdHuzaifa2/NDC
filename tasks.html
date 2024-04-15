@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="./assets/css/components.css">
 </head>
 <body>
-    <header style="position: fixed;">
+  <div class="overlay"></div>
+  <header style="position: fixed;">
         <a class="left-absolute" href="./index.html">
             <svg data-v-5d12bc28="" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-5d12bc28="" d="M22 8C22 7.44772 21.5523 7 21 7L3.83 7L8.71 2.12C9.10171 1.72829 9.10059 1.09284 8.70749 0.702509C8.31635 0.314123 7.68476 0.315239 7.295 0.705005L1.06667 6.93333C0.477562 7.52244 0.477563 8.47756 1.06667 9.06667L7.29468 15.2947C7.68422 15.6842 8.31578 15.6842 8.70532 15.2947C9.0946 14.9054 9.09489 14.2743 8.70595 13.8847L3.83 9L21 9C21.5523 9 22 8.55229 22 8Z" fill="currentColor"></path></svg>
         </a>
         <h2>Tasks</h2>
     </header>
-    <main>
-        <div class="tasks-container">
+  <main>
+    <div class="tasks-container">
             <div class="task-item">
                 <div class="flex justify-sb">
                     <div class="icon">
@@ -96,6 +97,37 @@
                 <p class="title">Invite to activate 1000</p>
             </div>
         </div>
-    </main>
+  </main>
+  <div class="modal invite">
+      <h4>Invite to activate 10</h4>
+      <p class="subtitle">By sharing, when the member you recommend reaches VIP1 or above, success +10. Additional reward 47 (when you reach the goal, you can receive the bonus here every day)</p>
+      <div class="btn-group">
+        <button class="cancel-btn">Cancel</button>
+        <button class="confirm-button">Confirm</button>
+      </div>
+    </div>
+  <script>
+    let overlay = document.querySelector('.overlay');
+    let modal = document.querySelector('.modal');
+    let svgs = Array.from(document.querySelectorAll('.task-item .flex svg'));
+    
+    svgs.forEach((svg) => {
+      svg.addEventListener('click', function() {
+        let parent = this.parentElement.parentElement.parentElement;
+        
+        modal.querySelector('h4').innerText = parent.querySelector('.title').innerText;
+        
+        modal.querySelector('p').innerText = parent.querySelector('.subtitle').innerText;
+        
+        modal.querySelector('.cancel-btn').addEventListener('click', function() {
+          modal.classList.remove('active');
+          overlay.classList.remove('active');
+        })
+        
+        modal.classList.add('active');
+        overlay.classList.add('active');
+      })
+    })
+  </script>
 </body>
 </html>
