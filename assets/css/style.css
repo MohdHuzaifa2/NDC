@@ -70,6 +70,7 @@ main {
   padding: 10px 10px 100px 10px;
 }
 .section-header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -192,76 +193,111 @@ footer ul a.active li p {
   color: var(--green);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .slider-section {
-  width: 100%;
-  display: flex;
-  overflow-x: auto;
-  margin-bottom: 24px;
-  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
 }
-.slide {
+
+.swiper {
   width: 100%;
-  min-width: 100%;
-  display: flex;
-  column-gap: 10px;
-  justify-content: space-between;
+  height: 100%;
+  margin-inline: auto;
+}
+
+.swiper-slide {
+  padding: 5px;
+  border-radius: 20px;
   background: var(--light);
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
 }
-.slide-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 10px;
-  padding-right: 0;
-}
-.slide-left .title {
-  font-size: 16px;
-  font-weight: 800;
-}
-.slide-left .desc {
-  font-size: 13px;
-}
-.slide-left .btn-group {
-  display: flex;
-}
-.slide-left button {
+
+.slide-img {
   width: 100%;
-  padding: 2.5px;
+  aspect-ratio: 16/9;
+  border-radius: 15px;
+  background: url(https://picsum.photos/300);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.img-label {
+  padding: 3px 5px;
+  font-size: 14px;
+  background: #fff5;
+  color: white;
+  border-radius: 5px;
+  backdrop-filter: blur(15px);
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.slide-content {
+  margin: 6px auto;
+}
+
+.slide-content-header, .slide-content-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slide-content-header .slide-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.slide-content-header .vip {
+  font-size: 17px;
+  color: orangered;
+  border-block: 2px solid orangered;
+}
+
+.slide-details {
+  margin: 5px auto;
+}
+
+.slide-details .tips {
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  color: #888;
+  margin-bottom: 2px;
+}
+
+.slide-details .tips span:nth-child(2) {
+  color: black;
+}
+
+.slide-content-footer .price {
+  font-size: 20px;
+  color: orangered;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+.slide-content-footer .invest-btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  background: orangered;
   border: none;
   outline: none;
-  margin: 0 2.5px;
-  display: inline;
-  font-size: 17px;
-  border: 2px solid var(--green);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #333;
+  border-radius: 20px;
 }
-.slide-right img {
-  height: 170px;
-}
-.slide-left a {
-  text-decoration: none;
-  color: white;
-  font-weight: 700;  
-  cursor: pointer;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 .primary-btn {
   text-decoration: none;
   color: white;

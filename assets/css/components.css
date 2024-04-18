@@ -196,7 +196,8 @@ label.selected {
     width: 100%;
     display: flex;
     overflow-x: hidden;
-    scroll-padding-top: 50px;
+    scroll-padding-top: -100px;
+    scroll-snap-type: x mandatory;
 }
 
 .page {
@@ -204,7 +205,6 @@ label.selected {
     height: auto;
     overflow-x: auto;
     padding: 20px 0;
-    scroll-padding-top: 50px;
 }
 
 .page .van-tab__pane div {
@@ -1106,4 +1106,34 @@ form button[type="submit"] {
 .modal.invite .confirm-button {
   background: var(--green);
   color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+table thead tr {
+  background: #00A19F1A;
+  text-align: left;
+  color: #0f0f0f;
+}
+
+thead th, tbody td {
+  padding: 12px 15px;
+}
+
+tbody td {
+  background: #F6F8F7;
+  color: var(--green);
+  font-weight: 600;
+}
+
+.capsule {
+  padding: 3px;
+  border: 1px solid #FFBB0C;
+  color: #FFBB0C;
+  border-radius: 3px;
+  font-weight: 400;
 }
