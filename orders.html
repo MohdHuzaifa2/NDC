@@ -85,7 +85,9 @@
             tab.addEventListener("click", () => {
                 tabs.forEach((tabla) => tabla.classList.remove("active"));
                 tab.classList.add("active");
-                document.querySelector('.page-container').scrollTo(document.getElementById(tab.dataset.for).offsetLeft,0)
+                document.getElementById(tab.dataset.for).scrollIntoView({
+                    behavior: 'smooth'
+                });
             })
         })
     </script>

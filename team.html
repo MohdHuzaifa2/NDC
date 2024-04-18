@@ -35,9 +35,22 @@
         </div>
       <div class="page-container">
         <div class="page" id="a">
-          <div class="container">
-            <p style="color: var(--green);">No Invitation Yet</p>
-          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Register Time</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1694079</td>
+                <td>2024-04-15</td>
+                <td><span class="capsule">Inactive</span></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div class="page" id="b">
           <div class="container">
@@ -58,7 +71,9 @@
           tab.addEventListener("click", () => {
             tabs.forEach((tabla) => tabla.classList.remove("active"));
             tab.classList.add("active");
-            document.querySelector('.page-container').scrollTo(document.getElementById(tab.dataset.for).offsetLeft, 0)
+            document.getElementById(tab.dataset.for).scrollIntoView({
+              behavior: 'smooth'
+            });
           })
         })
     </script>
